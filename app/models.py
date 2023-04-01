@@ -18,6 +18,7 @@ class Team(models.Model):
         return self.name
 
 
+# este modelo é apenas para testar o ManyToManyField
 class MyTeam(models.Model):
     players = models.ManyToManyField(Player)
 
