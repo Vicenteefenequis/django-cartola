@@ -1,0 +1,72 @@
+[
+    {
+        "model": "app.player",
+        "pk": 1,
+        "fields": {
+            "name": "Neymar",
+            "initial_price": 10.0
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 2,
+        "fields": {
+            "name": "Messi",
+            "initial_price": 20.0
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 3,
+        "fields": {
+            "name": "Cristiano Ronaldo",
+            "initial_price": 20.0
+        }
+    },
+    {
+        "model": "app.team",
+        "pk": 1,
+        "fields": {
+            "name": "Brasil"
+        }
+    },
+    {
+        "model": "app.team",
+        "pk": 2,
+        "fields": {
+            "name": "Argentina"
+        }
+    },
+    {
+        "model": "app.myteam",
+        "pk": 1,
+        "fields": {
+            "players": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "app.match",
+        "pk": 1,
+        "fields": {
+            "match_Date": "2023-04-01T01:57:41Z",
+            "team_a": 1,
+            "team_a_goal": 0,
+            "team_b": 2,
+            "team_b_goal": 0
+        }
+    },
+    {
+        "model": "app.action",
+        "pk": 1,
+        "fields": {
+            "player": 1,
+            "team": 1,
+            "minutes": 10,
+            "match": 1,
+            "action": "goal"
+        }
+    }
+]
